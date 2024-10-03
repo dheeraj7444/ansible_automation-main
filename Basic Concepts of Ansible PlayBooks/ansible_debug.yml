@@ -30,4 +30,4 @@
     - name: verbocity in debug module
       debug:
         msg: "Hi this is deep logging at deub level 2"
-        verbocity: 2
+        verbosity: 2

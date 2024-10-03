@@ -1,0 +1,11 @@
+#!/root/ansible/myansible/bin/ansible-playbook
+---
+- name: Install package 
+  hosts: all
+  become: 'yes'
+
+  tasks: 
+    - name: Install webserver
+      yum:
+      name: httpd
+      state: present
